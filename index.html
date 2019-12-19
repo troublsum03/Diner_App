@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Lucy's Cake Shop</title>
+  <style>
+  </style>
+</head>
+
+<body>
+
+ 
+<header id="header">
+<nav class="navbar navbar-expand-lg px-4">
+<!-- 
+    https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+      <a href="#" class="navbar-brand">
+        <img src="img/logo.svg" alt="main icon">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav text-capitalize mx-auto">
+          <li class="nav-item active">
+            <a href="#header" class="nav-link">home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#about" class="nav-link">about</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#store" class="nav-link">store</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#services" class="nav-link">services</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#cakes" class="nav-link">order</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex">
+          <!-- single info-->
+          <div class="nav-info align-items-center d-flex justtify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <i class="fas fa-phone"></i>
+            </span>
+            <p class="mb-0">(210) 673-5965</p>
+          </div>
+          <!-- single info-->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3">
+              <i class="fas fa-shopping-cart"></i>
+            </span>  
+            <p class="mb-0 text-capitalize">
+              <span id="item-count">2</span>
+              items = $
+              <span class="item-total">
+                10.49
+              </span> 
+            </p>
+          </div>
+        </div>
+      </div>
+</nav>
+<!-- end of nav -->
+<!-- banner -->
+<div class="container-fluid">
+  <div class="row max-height justify-content-center align-items-center">
+    <div class="col-10 mx-auto banner text-center">
+      <h1 class="text-capitalize">
+        Welcome to <strong class="banner-title">Lucy's</strong>
+      </h1>
+      <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+    </div>
+    <!-- Store -->
+  </div>
+</div>
+<!-- end of banner-->
+</header>
+<!-- end of header -->
+<!-- about -->
+<section class="about py-5" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto col-md-6 my-5">
+        <h1 class="text-capitalize">about <strong class="banner-title">us</strong></h1>
+        <p class="my-4 text-muted w-75">
+          Lucy's Cake Shop is a family owned and operated business which has been providing great tasting, beautiful cakes for over 40 years.
+Our reputation has been built on our elegant and delicious Wedding Cakes, as well as our diversity of different themes for special occasion cakes... that taste great!
+For years, San Antonio's major corporations, hotels, churches, military bases, and families have called on Lucy's Cake Shop to provide them with their special occasion cakes. We can create cakes with special corporate logos, emblems, and specific insignias and personalized party cakes. Our cakes have become the centerpieces of many San Antonio festivities.
+We are a family tradition with many of our customers... an initial wedding cake order leads to baby shower cakes, to children's birthday cakes, to graduation cakes... and continues on!
+        </p>
+        <a href="#" class="btn btn-black text-uppercase">explore</a>
+      </div>
+      <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+        <div class="about-img__container">
+          <img src="img/sweets-1.jpeg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of about -->
+<!-- store section-->
+<section id="store" class="store py-5">
+  <div class="container">
+    <!-- section title-->
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize">our <strong class="banner-title">store</strong></h1>
+      </div>
+    </div>
+    <!-- end of section title-->
+    <!--fitler buttons -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+        <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">all</a>
+        <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">cakes</a>
+        <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">cupcakes</a>
+        <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">sweets</a>
+        <a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">doughnuts</a>
+      </div>
+    </div>
+    <!--end of fitler buttons -->
+    <!-- search box -->
+    <div class="row">
+      <div class="col-10 mx-auto col-md-6">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text search-box" id="search-icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="item..." id="search-item">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <!-- end of search box -->
+    <!-- store items-->
+    <div class="row store-items" id="store-items">
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> sweet item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cupcake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> doughnut item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">5</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> sweet item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+            <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cupcake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> doughnut item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">10</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> Sweet item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cupcake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> cake item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- single items-->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+        <div class="card single-item">
+          <div class="img-container">
+            <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name"> doughnut item</h5>
+              <h5 class="store-itme-value">$ <strong id="storem-item-price" class="font-weight-bold">15</strong></h5>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!-- end of single items-->
+    </div>
+    <!--end of store items-->
+  </div>
+</section>
+<!-- end of store section-->
+ <!-- icons -->
+  <!--end of icons icons -->
+  <!-- services -->
+<section id="services" class="services py-5">
+  <div class="container">
+    <div class="row">
+      <!--single service-->
+      <div class="col-md-4 text-center my-3">
+        <!-- 
+    https://www.iconfinder.com/icons/2427860/baguette_bread_bread_loaf_food_toast_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+        <img src="img/bread-icon.png" alt="bread icon">
+        <h6 class="text-uppercase my-3 service-title">bread</h6>
+        <p class="w-75 mx-auto text-left service-text">
+          Whether you are hosting an intimate dinner party or a grand event, Blanca's Cakes and Catering offers creative menus and the beautiful decorating ideas to make your celebration special.
+          We have catered celebrations of virtually every type – including anniversary parties, quinceneras, birthday parties, engagement parties, baptisms, graduation parties and much more.
+          Regardless of what you’re celebrating, we will tailor our service to meet your exact needs while ensuring that your ideas are a part of the event. Our goal is to provide you with delicious meals, tasty celebration cakes and thoughtful service that please your family and friends!
+        </p>
+      </div>
+      <!--single service-->
+      <div class="col-md-4 text-center my-3">
+      <!-- 
+    https://www.iconfinder.com/icons/2427875/cup_cupcake_dessertice_cream_yogurt_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+        <img src="img/cupcake-icon.png" alt="cupcake icon">
+        <h6 class="text-uppercase my-3 service-title">cupcake</h6>
+        <p class="w-75 mx-auto text-left service-text">
+          Blanca's will work with you to customize your cake to your specifications. Your life’s special events are important, and as such, your cake should be extraordinary. We can decorate any size of our specialty layer cakes or build a custom cake as you would like! We look forward to talking with you about that process.
+          Our cakes are made from scratch with fresh and top-quality ingredients that look and taste amazing. With fresh frosting and filling, your special cake will be a highlight of the celebration.
+        </p>
+      </div>
+      <!--single service-->
+      <div class="col-md-4 text-center my-3">
+      <!-- 
+    https://www.iconfinder.com/icons/2671457/candy_sweets_treat_trick_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/bluelabelicons
+         -->
+        <img src="img/candy-icon.png" alt="candy icon">
+        <h6 class="text-uppercase my-3 service-title">candy</h6>
+        <p class="w-75 mx-auto text-left service-text">
+          Blanca's catering staff will create a truly memorable wedding and rehearsal dinner or corporate event designed specifically for you. We'll use our experience and creativity to bring the right combination of cuisine, service, decor and venue to make your guests welcome and happy.
+        </p>
+      </div>
+      <!--end of single service-->
+    </div>
+  </div>
+</section>
+  <!-- end of services -->
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html> <!-- 1:29:54 start at-->
