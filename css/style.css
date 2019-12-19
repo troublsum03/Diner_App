@@ -159,3 +159,54 @@ body {
   color: var(--mainWhite);
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/servicesBcg.jpeg") center/cover fixed no-repeat;
 }
+.service-title {
+  letter-spacing: 0.5rem;
+}
+.service-text {
+  word-spacing: 0.5rem;
+}
+/* footer */
+.footer-title {
+  background: var(--mainBlack);
+}
+.footer-contact {
+  background: var(--mainGrey);
+}
+.footer-icon {
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  transition: all 0.4 ease-in-out;
+}
+.footer-icon:hover {
+  color: var(--mainPink);
+}
+/* cart */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+.cart-item-price {
+  font-size: 0.8rem;
+}

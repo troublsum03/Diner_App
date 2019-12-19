@@ -87,7 +87,49 @@
       </h1>
       <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
     </div>
-    <!-- Store -->
+    <!-- cart -->
+    <div class="cart" id="cart">
+      <!-- cart item -->
+      <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+        <img src="img-cart/cake-1.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+        <div class="item-text">
+          <p id="cart-item-title" class="font-weight-bold mb-0">
+            cart item</p>
+          <span>$</span>
+          <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+          
+        </div>
+        <a href="#" id="cart-item-remove" class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!-- cart item -->
+      <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+        <img src="img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+        <div class="item-text">
+          <p id="cart-item-title" class="font-weight-bold mb-0">
+            cart item</p>
+          <span>$</span>
+          <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+          
+        </div>
+        <a href="#" id="cart-item-remove" class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!-- end of cart item -->
+      <!-- cart total -->
+      <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+        <h5>total</h5>
+        <h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+      </div>
+      <!-- end of cart total -->
+      <!-- cart buttons -->
+      <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+        <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
+        <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">checkout</a>
+      </div>
+    </div>
   </div>
 </div>
 <!-- end of banner-->
@@ -382,9 +424,7 @@ We are a family tradition with many of our customers... an initial wedding cake 
         <img src="img/bread-icon.png" alt="bread icon">
         <h6 class="text-uppercase my-3 service-title">bread</h6>
         <p class="w-75 mx-auto text-left service-text">
-          Whether you are hosting an intimate dinner party or a grand event, Blanca's Cakes and Catering offers creative menus and the beautiful decorating ideas to make your celebration special.
-          We have catered celebrations of virtually every type – including anniversary parties, quinceneras, birthday parties, engagement parties, baptisms, graduation parties and much more.
-          Regardless of what you’re celebrating, we will tailor our service to meet your exact needs while ensuring that your ideas are a part of the event. Our goal is to provide you with delicious meals, tasty celebration cakes and thoughtful service that please your family and friends!
+          Blanca's catering staff will create a truly memorable wedding and rehearsal dinner or corporate event designed specifically for you. We'll use our experience and creativity to bring the right combination of cuisine, service, decor and venue to make your guests welcome and happy.
         </p>
       </div>
       <!--single service-->
@@ -397,8 +437,7 @@ We are a family tradition with many of our customers... an initial wedding cake 
         <img src="img/cupcake-icon.png" alt="cupcake icon">
         <h6 class="text-uppercase my-3 service-title">cupcake</h6>
         <p class="w-75 mx-auto text-left service-text">
-          Blanca's will work with you to customize your cake to your specifications. Your life’s special events are important, and as such, your cake should be extraordinary. We can decorate any size of our specialty layer cakes or build a custom cake as you would like! We look forward to talking with you about that process.
-          Our cakes are made from scratch with fresh and top-quality ingredients that look and taste amazing. With fresh frosting and filling, your special cake will be a highlight of the celebration.
+          Blanca's catering staff will create a truly memorable wedding and rehearsal dinner or corporate event designed specifically for you. We'll use our experience and creativity to bring the right combination of cuisine, service, decor and venue to make your guests welcome and happy.
         </p>
       </div>
       <!--single service-->
@@ -419,7 +458,116 @@ We are a family tradition with many of our customers... an initial wedding cake 
   </div>
 </section>
   <!-- end of services -->
+  <!-- cakes -->
+<section id="cakes" class="cakes py-5">
+  <div class="container">
+    <!-- section title-->
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize">order <strong class="banner-title">cake</strong></h1>
+      </div>
+    </div>
+    <!-- end of section title-->
+    <div class="row">
+      <!-- single cake -->
+      <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+        <h3 class="py-3">birthday cake</h3>
+        <div class="text-muted">
+          <p class="my-3">birthday cake with a name</p>
+          <p class="my-3">custom ingredients</p>
+          <p class="my-3">custom size</p>
+          <p class="my-3">custom design</p>
+          <button type="button" class="btn btn-pink text-capitalize mb-3">order now</button>
+          <p class="text-lowercase mb-4">starting at $25</p>
+          <img src="img/trans-cake.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <!-- end of single cake -->
+      <!-- single cake -->
+      <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+        <h3 class="py-3">custom cake</h3>
+        <div class="text-muted">
+          <p class="my-3">birthday cake with a name</p>
+          <p class="my-3">custom ingredients</p>
+          <p class="my-3">custom size</p>
+          <p class="my-3">custom design</p>
+          <button type="button" class="btn btn-pink text-capitalize mb-3">order now</button>
+          <p class="text-lowercase mb-4">starting at $50</p>
+          <img src="img/trans-custom.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <!-- end of single cake -->
+      <!-- single cake -->
+      <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+        <h3 class="py-3">wedding cake</h3>
+        <div class="text-muted">
+          <p class="my-3">birthday cake with a name</p>
+          <p class="my-3">custom ingredients</p>
+          <p class="my-3">custom size</p>
+          <p class="my-3">custom design</p>
+          <button type="button" class="btn btn-pink text-capitalize mb-3">order now</button>
+          <p class="text-lowercase mb-4">starting at $75</p>
+          <img src="img/trans-wedding.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <!-- end of single cake -->
+    </div>
+  </div>
+</section>
+  <!-- end of cakes -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-6 footer-title py-5">
+      <h1 class="text-capitalize text-center">
+        <strong class="banner-title">Lucy's</strong>
+      </h1>
+      <div class="footer-icons mt-3 d-flex justify-content-around flex-wrap">
+        <a href="#" class="footer-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="footer-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer-icon">
+          <i class="fab fa-google-plus"></i>
+        </a>
 
+      </div>
+    </div>
+    <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+      <h3 class="mb-5">contact</h3>
+      <p class="d-flex flex-wrap">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-map"></i>
+        </span>
+        <span>
+          2030 SW Loop 410, San Antonio TX 78221
+        </span>
+      </p>
+      <p class="d-flex flex-wrap">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-phone"></i>
+        </span>
+        <span>
+          (210) 673-5965
+        </span>
+      </p>
+      <p class="d-flex flex-wrap">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span>
+          lucycakeshop@sbcglobal.net
+        </span>
+      </p>
+    </div>
+    </div>
+  </div>
+</footer>
   <!-- jquery -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <!-- bootstrap js -->
@@ -428,4 +576,4 @@ We are a family tradition with many of our customers... an initial wedding cake 
   <script src="js/app.js"></script>
 </body>
 
-</html> <!-- 1:29:54 start at-->
+</html> 
